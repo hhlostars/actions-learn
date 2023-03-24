@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 查看当前路径
-      - run: ls
+      - run: cd ${{ github.workspace }}/web
       # 拉取项目代码
       - name: Checkout repository
         uses: actions/checkout@v2
