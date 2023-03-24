@@ -9,6 +9,8 @@ jobs:
   CI:
     runs-on: ubuntu-latest
     steps:
+      # 查看当前路径
+      - run: echo "ls"
       # 拉取项目代码
       - name: Checkout repository
         uses: actions/checkout@v2
