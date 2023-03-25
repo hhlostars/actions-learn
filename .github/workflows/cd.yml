@@ -35,6 +35,7 @@ jobs:
       - name: Building
         run: |
           pwd
+          echo ${{ secrets.PROJECT_ACCESS_TOKEN }}
           cd ./web
           npm run build
           zip -r assets ./dist/**
