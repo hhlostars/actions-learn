@@ -30,10 +30,11 @@ jobs:
         id: version
         uses: ashley-taylor/read-json-property-action@v1.0
         with:
-          path: ./package.json
+          path: ./web/package.json
           property: version
       - name: Building
         run: |
+          pwd
           npm run build
           zip -r assets ./dist/**
       - name: Create GitHub Release
