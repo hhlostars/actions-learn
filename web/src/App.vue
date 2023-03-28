@@ -11,8 +11,8 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="github-action 自动化部署" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Home2</RouterLink>
+        <RouterLink to="/about">About2</RouterLink>
       </nav>
     </div>
   </header>
